@@ -19,3 +19,5 @@
 `python3 gui.py`
 
 **Step 3:** Enter the prompt, choose prompt builder, and click "Send"
+
+<img width="681" alt="demo" src="https://github.com/jackbullen/ChatGPT-Controller/assets/37254717/8862ab85-36ab-458e-8861-80d79695c05f">
