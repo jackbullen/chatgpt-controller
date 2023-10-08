@@ -38,7 +38,7 @@ prompt_builder_var.set("Standard")  # default value
 prompt_builder_label = tk.Label(root, text="Select a Prompt Builder:")
 prompt_builder_label.pack(pady=5)
 prompt_builder_dropdown = ttk.Combobox(root, textvariable=prompt_builder_var, 
-                                       values=["Standard", "Build", "Research", "Deep Dive", "Expert Panel"])#, 
+                                       values=["Standard", "Build", "Research", "Deep Dive", "Notebook", "Expert Panel"])#, 
                                                #"Historical Context", "Pro-Con Analysis", "Future Implications"])
 prompt_builder_dropdown.pack(pady=5)
 

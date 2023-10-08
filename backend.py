@@ -86,6 +86,29 @@ def prompt_builder(query, builder_type):
     #     f"6. Reflect on the development process. "
     #     f"Work together to bring '{query}' to life, emphasizing clear communication, quality code, and a user-centric approach.")
                 
+    elif builder_type == "Notebook":
+        return f"""Your task is to act as a team of agents and create an educational Jupyter notebook about '{query}'. You are a team of AI agents, each with specialized expertise:
+        - Agent X: Pure Mathematician
+        - Agent Y: Applied Mathematician
+        - Agent Z: Experienced Teacher
+        - Agent W: Statistician
+
+        1. Pure: Dive into the foundational mathematical concepts behind '{query}'. What are the key principles and theories that underpin this topic? Elucidate the theoretical framework.
+
+        2. Applied: Given the foundational concepts provided by Agent X, how can these be applied to real-world scenarios or problems? Develop practical applications or problem-solving techniques related to '{query}'.
+
+        3. Teacher: Develop pedagogical content to explain the topic. This includes step-by-step tutorials, exercises, and explanations. Make sure the content is engaging, clear, and suitable for learners. Consider incorporating visual aids or interactive Python examples to enhance understanding.
+
+        4. Statistician: If '{query}' involves data or probabilistic elements, provide a statistical perspective. Analyze any relevant data, highlight statistical methods or tools that can be applied, and explain their relevance in the context of '{query}'.
+
+        5. All Agents: Collaborate to integrate your content. Ensure that the notebook flows logically, with a balance of theory, application, pedagogical content, and statistical analysis.
+
+        6. Teacher: Design exercises or quizzes to test the learner's understanding of '{query}'. Provide solutions and explanations for each.
+
+        7. All Agents: Reflect on the notebook's content. Is there a need for further clarifications, additions, or refinements to make the topic more comprehensible and engaging for learners?
+
+        Work together to create a comprehensive, educational, and engaging Jupyter notebook on '{query}', prioritizing effective teaching, clear explanations, and deep subject matter expertise.
+        """
 
 
     elif builder_type == "Build":
